@@ -27,6 +27,23 @@
         teste (function(){
             console.log('Função passado por parâmetro');
         });
+
+        console.log('----------------------');
+
+
+        var x = (0);
+        var y;
+
+        function mostraX(){
+            var x = 10; //escopo local se eu queiser x = 10 modificar o escopo global
+            var y = 20;            
+            console.log("Mostra X dentro: ",x);
+            console.log('Mostrar Y dentro: ', y);
+        }
+
+        mostraX();
+        console.log("Mostrar X fora: ",x);
+        console.log("Mostrar Y fora: ",y)
     </script>
 </body>
 </html>
