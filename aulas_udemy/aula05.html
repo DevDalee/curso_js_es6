@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Criação de Funções literais
+        function somar (n1, n2) {
+            //Corpo da Função
+            return n1+n2;
+        }
+        var soma = somar(10,20);
+
+        console.log('Resultado:', soma);
+
+        somar.teste = 'Propriedade da função';
+
+        console.log(somar.teste)
+
+        //Função anonima/Função passada por parâmetro
+        var teste = function(f){
+            f()
+        };
+        teste (function(){
+            console.log('Função passado por parâmetro');
+        });
+    </script>
+</body>
+</html>
